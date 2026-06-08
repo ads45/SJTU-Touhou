@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SJTU东方Project社团</title>
+    <title>东方南堂界遇 - 上海交大东方Project社团</title>
     <style>
         /* 全局样式 */
         * {
@@ -25,6 +25,7 @@
             padding: 1rem 2rem;
             position: sticky;
             top: 0;
+            z-index: 100;
         }
         
         nav a {
@@ -40,7 +41,7 @@
         
         /* 主容器 */
         .container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 2rem;
         }
@@ -76,16 +77,60 @@
             margin-bottom: 1.5rem;
         }
         
-        /* 历史时间线 */
-        .timeline {
-            list-style: none;
+        /* 活动列表样式 */
+        .activity-item {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1.2rem;
+            margin-bottom: 1.2rem;
         }
         
-        .timeline li {
-            padding: 0.8rem 0;
-            border-left: 3px solid #e67e22;
-            padding-left: 1.5rem;
-            margin-left: 1rem;
+        .activity-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .activity-title {
+            color: #2c3e50;
+            margin-bottom: 0.3rem;
+            font-size: 1.2rem;
+        }
+        
+        .activity-meta {
+            color: #e67e22;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .activity-desc {
+            color: #555;
+            margin-bottom: 0.5rem;
+        }
+        
+        .read-more {
+            color: #e67e22;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        
+        .read-more:hover {
+            text-decoration: underline;
+        }
+        
+        /* 年份分隔 */
+        .year-divider {
+            margin: 1rem 0 0.5rem 0;
+            padding-top: 0.5rem;
+        }
+        
+        .year-badge {
+            display: inline-block;
+            background: #2c3e50;
+            color: white;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
         }
         
         /* 页脚 */
@@ -110,7 +155,7 @@
 <nav>
     <a href="#home">首页</a>
     <a href="#about">社团介绍</a>
-    <a href="#history">社团历史</a>
+    <a href="#activities">近期活动</a>
 </nav>
 
 <div class="container">
@@ -124,28 +169,127 @@
     <div class="section" id="about">
         <h2>📖 社团介绍</h2>
         <p>东方南堂界遇，是上海交通大学东方Project社团，定期举办游戏交流、音乐鉴赏、创作分享等活动。</p>
-        <p>角色厨、音乐爱好者、stg发烧友和同人作者……欢迎对东方充满热爱的新伙伴加入我们</p>
+        <p>角色厨、音乐爱好者、STG发烧友和同人作者……欢迎对东方充满热爱的新伙伴加入我们！</p>
         <p style="margin-top: 0.5rem;">🎮 欢迎交大同学加入Q群：<strong>686922858</strong>！非本校学生也欢迎加入例会游客群：<strong>471319153</strong>。</p>
     </div>
 
-    <!-- 社团历史模块 -->
-    <div class="section" id="history">
-        <h2>📅 社团历史</h2>
-        <ul class="timeline">
-            <li><strong>2016年9月</strong> - 上海交大东方群“Scarlet Joyful Touhou Univ.”创建，社群诞生</li>
-            <li><strong>2017年12月</strong> - “FZ西方文化交流群”创建，正式归属动漫协会</li>
-            <li><strong>2018年12月</strong> - 首次在FZ动漫协会圣诞活动中设立东方摊位</li>
-            <li><strong>2019年4月</strong> - 第一次东方STG接力，B站投稿成功</li>
-            <li><strong>2023年至今</strong> - 社团持续发展，成员不断壮大</li>
-        </ul>
-        <p style="margin-top: 1.5rem;">
-            <a href="history.html" style="color: #e67e22; text-decoration: none; font-weight: bold;">📖 查看完整活动史 →</a>
+    <!-- 近期活动模块（基于飞书文档2025-2026年真实记录） -->
+    <div class="section" id="activities">
+        <h2>🎉 近期活动</h2>
+        
+        <!-- ===== 2026年 ===== -->
+        <div class="year-divider"><span class="year-badge">2026</span></div>
+        
+        <div class="activity-item">
+            <h3 class="activity-title">浮泽夏日纪 出摊</h3>
+            <div class="activity-meta">📅 2026年5月31日 | 📍 浮泽夏日纪会场</div>
+            <div class="activity-desc">
+                社团以“东方南堂界遇”名义在浮泽夏日纪设立摊位，展示东方文化，与同好交流。
+            </div>
+            <a href="#" class="read-more">阅读全文 →</a>
+        </div>
+        
+        <div class="activity-item">
+            <h3 class="activity-title">参加同济例会</h3>
+            <div class="activity-meta">📅 2026年5月30日 | 📍 同济大学</div>
+            <div class="activity-desc">
+                社团成员组团参加同济大学东方主题例会，与各校东方社群交流互动。
+            </div>
+            <a href="#" class="read-more">阅读全文 →</a>
+        </div>
+        
+        <div class="activity-item">
+            <h3 class="activity-title">皖江THO 出摊</h3>
+            <div class="activity-meta">📅 2026年5月4日 | 📍 皖江THO会场</div>
+            <div class="activity-desc">
+                以“东方南堂界遇”社团身份参加皖江THO（东方同人展会），展示社团作品。
+            </div>
+            <a href="#" class="read-more">阅读全文 →</a>
+        </div>
+        
+        <div class="activity-item">
+            <h3 class="activity-title">宁波THO 出摊</h3>
+            <div class="activity-meta">📅 2026年5月2日 | 📍 宁波THO会场</div>
+            <div class="activity-desc">
+                以“东方南堂界遇”社团身份参加宁波THO，这是社团首次以正式名义参加外地THO。
+            </div>
+            <a href="#" class="read-more">阅读全文 →</a>
+        </div>
+        
+        <div class="activity-item">
+            <h3 class="activity-title">顾村公园赏花</h3>
+            <div class="activity-meta">📅 2026年3月23日 | 📍 顾村公园</div>
+            <div class="activity-desc">
+                社团春季户外活动，成员们前往顾村公园赏花、聚餐、交流。
+            </div>
+            <a href="#" class="read-more">阅读全文 →</a>
+        </div>
+        
+        <!-- ===== 2025年 ===== -->
+        <div class="year-divider"><span class="year-badge">2025</span></div>
+        
+        <div class="activity-item">
+            <h3 class="activity-title">第四届“东方南堂界遇”例会</h3>
+            <div class="activity-meta">📅 2025年12月7日 | 📍 子衿街博雅厅</div>
+            <div class="activity-desc">
+                社团史上规模最大的线下例会！约150人到场（场地容量上限），包含Bingo、歌牌、图寻、FTG对战、STG接力等丰富环节。活动全程直播并录制，B站有视频存档。现场还分发了社团周边（诹访子立牌、早苗钥匙扣、吧唧、纸袋等）。
+            </div>
+            <a href="#" class="read-more">阅读全文 →</a>
+        </div>
+        
+        <div class="activity-item">
+            <h3 class="activity-title">浮泽秋日纪 出摊</h3>
+            <div class="activity-meta">📅 2025年11月29日 | 📍 子衿街博雅厅</div>
+            <div class="activity-desc">
+                社团在浮泽秋日纪设立摊位，内容精彩纷呈：播放东方曲、STG Bingo低难度挑战、Fumo祭坛、东方书籍碟片展示、同人游戏试玩、无料交换、桌游红黑合战。现场还有魔理沙coser和笛子演奏，吸引了大量观众。
+            </div>
+            <a href="#" class="read-more">阅读全文 →</a>
+        </div>
+        
+        <div class="activity-item">
+            <h3 class="activity-title">参加华理例会</h3>
+            <div class="activity-meta">📅 2025年11月15日 | 📍 华东理工大学</div>
+            <div class="activity-desc">
+                社团成员前往华东理工大学参加东方主题例会，与华理东方社群交流。
+            </div>
+            <a href="#" class="read-more">阅读全文 →</a>
+        </div>
+        
+        <div class="activity-item">
+            <h3 class="activity-title">参加上财例会</h3>
+            <div class="activity-meta">📅 2025年11月8日 | 📍 上海财经大学</div>
+            <div class="activity-desc">
+                社团成员前往上海财经大学参加东方主题例会，与上财东方社群交流。
+            </div>
+            <a href="#" class="read-more">阅读全文 →</a>
+        </div>
+        
+        <div class="activity-item">
+            <h3 class="activity-title">参加复旦大学东方主题例会</h3>
+            <div class="activity-meta">📅 2025年10月25日 | 📍 复旦大学</div>
+            <div class="activity-desc">
+                社团成员参加复旦大学“东方光华语”第三届东方主题例会，到场超过十六人。“饮水思源，爱国荣校”的口号响彻合影现场。活动结束后分发社团吧唧、合照、聚餐。同日，“东方南堂界遇IV”例会游客群建立，一小时内引流100人。
+            </div>
+            <a href="#" class="read-more">阅读全文 →</a>
+        </div>
+        
+        <div class="activity-item">
+            <h3 class="activity-title">与复旦合作明信片征图活动</h3>
+            <div class="activity-meta">📅 2025年2月 | 📍 线上</div>
+            <div class="activity-desc">
+                与复旦大学东方社群合作，为联名明信片举办征图活动，共4位创作者参与。
+            </div>
+            <a href="#" class="read-more">阅读全文 →</a>
+        </div>
+        
+        <p style="margin-top: 1rem; text-align: right; color: #888; font-size: 0.85rem;">
+            📌 更多活动（面基群聚、例会筹备会议等）持续更新中
         </p>
     </div>
 </div>
 
 <footer>
-    <p>© 2026 东方南堂界遇 </p>
+    <p>© 2026 东方南堂界遇 | 上海交通大学东方Project社团</p>
     <p>行くよ、幻想郷の皆さん！</p>
 </footer>
 
