@@ -6,6 +6,7 @@
     <title>社团产出 - 东方南堂界遇</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { height: 100%; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-image: url('bg.jpg');
@@ -13,6 +14,9 @@
             background-attachment: fixed;
             color: #333;
             line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         nav {
             background-color: rgba(44, 62, 80, 0.9);
@@ -27,6 +31,7 @@
             max-width: 1000px;
             margin: 0 auto;
             padding: 2rem;
+            flex: 1;
         }
         .back-link {
             display: inline-block;
@@ -86,7 +91,7 @@
 <nav>
     <a href="index.html">首页</a>
     <a href="history.html">社团历史</a>
-    <a href="project.html">社团产出</a>
+    <a href="project.html">社团产出</a>  <!-- ✅ 已修正 -->
 </nav>
 <div class="container">
     <a href="index.html" class="back-link">← 返回首页</a>
@@ -94,17 +99,17 @@
     <div class="three-cols">
         <div class="card">
             <h2>💻 线上产出</h2>
-            <p>STG接力视频、歌牌播放器等</p>
+            <p>STG接力视频、歌牌播放器、创作工坊作品……</p>
             <a href="online_project.html" class="btn">进入 →</a>
         </div>
         <div class="card">
             <h2>🎪 活动产出</h2>
-            <p>例会周边、海报、PPT、活动录像等</p>
-            <a href="activity_project.html" class="btn">进入 →</a>
+            <p>例会周边、海报、PPT、活动录像……</p>
+            <a href="event.html" class="btn">进入 →</a>
         </div>
         <div class="card">
             <h2>📦 制品产出</h2>
-            <p>徽章、明信片、立牌、印刷品等</p>
+            <p>徽章、明信片、立牌、同人志……</p>
             <a href="product_project.html" class="btn">进入 →</a>
         </div>
     </div>
