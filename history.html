@@ -3,223 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>社团活动全记录 - 上海交大东方社</title>
+    <title>社团历史 - 东方南堂界遇</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f0f0f0;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-attachment: fixed;
             color: #333;
             line-height: 1.6;
         }
-        
         nav {
-            background: #2c3e50;
+            background-color: rgba(44, 62, 80, 0.9);
             padding: 1rem 2rem;
             position: sticky;
             top: 0;
+            backdrop-filter: blur(5px);
         }
-        
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-right: 2rem;
-            font-size: 1rem;
-        }
-        
-        nav a:hover {
-            color: #e67e22;
-        }
-        
+        nav a { color: white; text-decoration: none; margin-right: 1.5rem; }
+        nav a:hover { color: #e67e22; }
         .container {
-            max-width: 1000px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 2rem;
-            background: white;
+            background: rgba(255,255,255,0.92);
             border-radius: 10px;
             margin-top: 2rem;
             margin-bottom: 2rem;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-        
         .back-link {
             display: inline-block;
             margin-bottom: 1.5rem;
             color: #e67e22;
             text-decoration: none;
         }
-        
-        .back-link:hover {
-            text-decoration: underline;
-        }
-        
         h1 {
             color: #2c3e50;
             border-left: 4px solid #e67e22;
             padding-left: 1rem;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
         }
-        
-        .subtitle {
-            color: #666;
-            margin-bottom: 2rem;
-            padding-left: 1.5rem;
+        .year-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 0.8rem;
+            margin-top: 1rem;
         }
-        
-        .year-section {
-            margin-bottom: 2rem;
-        }
-        
-        .year-title {
-            font-size: 1.8rem;
-            color: #2c3e50;
+        .year-link {
+            display: block;
             background: #f5f5f5;
-            padding: 0.5rem 1rem;
+            text-align: center;
+            padding: 0.8rem;
             border-radius: 8px;
-            margin-bottom: 1rem;
-        }
-        
-        .event-list {
-            list-style: none;
-            padding-left: 1rem;
-        }
-        
-        .event-list li {
-            margin-bottom: 0.8rem;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 0.8rem;
-        }
-        
-        .event-link {
             text-decoration: none;
-            font-weight: bold;
             color: #2c3e50;
-            font-size: 1.05rem;
+            font-weight: bold;
+            transition: all 0.2s;
         }
-        
-        .event-link:hover {
-            color: #e67e22;
+        .year-link:hover {
+            background: #e67e22;
+            color: white;
+            transform: translateY(-3px);
         }
-        
-        .event-desc {
-            color: #888;
-            font-size: 0.9rem;
-            margin-left: 0.5rem;
-        }
-        
-        .read-note {
+        .intro {
             background: #fef9e6;
             padding: 1rem;
             border-radius: 8px;
-            margin-top: 2rem;
+            margin-bottom: 1.5rem;
             border-left: 3px solid #e67e22;
         }
-        
         footer {
-            background: #2c3e50;
+            background: rgba(44, 62, 80, 0.9);
             color: white;
             text-align: center;
-            padding: 1.5rem;
-            margin-top: 2rem;
-        }
-        
-        @media (max-width: 768px) {
-            .container { padding: 1rem; margin: 1rem; }
-            nav a { margin-right: 1rem; font-size: 0.9rem; }
+            padding: 1rem;
+            margin-top: 1rem;
         }
     </style>
 </head>
 <body>
-
 <nav>
     <a href="index.html">首页</a>
-    <a href="index.html#about">社团介绍</a>
     <a href="history.html">社团历史</a>
-    <a href="index.html#activities">活动记录</a>
-    <a href="index.html#photos">照片合集</a>
+    <a href="产出.html">社团产出</a>
 </nav>
-
 <div class="container">
     <a href="index.html" class="back-link">← 返回首页</a>
-    <h1>📜 上海交通大学东方社群活动全记录</h1>
-    <p class="subtitle">从2016年群组建立开始，记录我们的每一次相聚</p>
-    
-    <!-- 阅读须知 -->
-    <div class="read-note">
-        <strong>📖 阅读须知</strong><br>
-        1. 本文的初衷是总结过去上海交通大学车万社群活动的经验，供后辈参考。<br>
-        2. 省略了一些小型活动，包括除了第一次之外的面基群聚、合奏排练、歌牌练习、创作工坊等。<br>
-        3. 欢迎交大同学加入Q群 <strong>686922858</strong>！非本校学生也欢迎加入例会游客群 <strong>471319153</strong>。
+    <h1>📅 社团历史</h1>
+    <div class="intro">
+        <strong>📖 关于本页</strong><br>
+        从2016年群组建立开始，记录每一次例会、面基、STG接力、逛展……<br>
+        点击下方年份，查看当年的详细活动记录。
     </div>
-    
-    <!-- 2016年 -->
-    <div class="year-section">
-        <div class="year-title">2016</div>
-        <ul class="event-list">
-            <li>
-                <a href="history-2016.html#event1" class="event-link">上海交大东方群“Scarlet Joyful Touhou Univ.”创建</a>
-                <span class="event-desc">—— 一切开始的地方，以讨论STG为主</span>
-            </li>
-        </ul>
-    </div>
-    
-    <!-- 2017年 -->
-    <div class="year-section">
-        <div class="year-title">2017</div>
-        <ul class="event-list">
-            <li>
-                <a href="history-2017.html#event1" class="event-link">“FZ西方文化交流群”创建</a>
-                <span class="event-desc">—— 属于校动漫协会的分群，建群之初进行过凭依华对战</span>
-            </li>
-        </ul>
-    </div>
-    
-    <!-- 2018年 -->
-    <div class="year-section">
-        <div class="year-title">2018</div>
-        <ul class="event-list">
-            <li>
-                <a href="history-2018.html#event1" class="event-link">首次面基群聚（东31四楼活动室）</a>
-                <span class="event-desc">—— 个位数群友线下STG和FTG活动</span>
-            </li>
-            <li>
-                <a href="history-2018.html#event2" class="event-link">二餐三楼面基 & 光彪楼琴房首次混响</a>
-                <span class="event-desc">—— 首次合奏尝试</span>
-            </li>
-            <li>
-                <a href="history-2018.html#event3" class="event-link">FZ动漫协会圣诞巡游活动东方摊位</a>
-                <span class="event-desc">—— 首次在漫协活动中设立东方专区</span>
-            </li>
-        </ul>
-    </div>
-    
-    <!-- 2019年 -->
-    <div class="year-section">
-        <div class="year-title">2019</div>
-        <ul class="event-list">
-            <li>
-                <a href="history-2019.html#event1" class="event-link">第一次东方STG接力</a>
-                <span class="event-desc">——《上海交大东方幕华祭春雪篇LNNN接力》B站投稿，共6人参加</span>
-            </li>
-        </ul>
-    </div>
-    
-    <!-- 注：文档中省略了2020-2025年的详细内容，可以根据实际情况补充 -->
-    <div class="read-note" style="margin-top: 1rem;">
-        <strong>✨ 更多活动持续更新中</strong><br>
-        2020年至今还有更多精彩活动，包括线上STG接力、创作工坊、音乐会等，内容正在整理中，敬请期待！
+    <div class="year-list">
+        <a href="2016.html" class="year-link">2016</a>
+        <a href="2017.html" class="year-link">2017</a>
+        <a href="2018.html" class="year-link">2018</a>
+        <a href="2019.html" class="year-link">2019</a>
+        <a href="2020.html" class="year-link">2020</a>
+        <a href="2021.html" class="year-link">2021</a>
+        <a href="2022.html" class="year-link">2022</a>
+        <a href="2023.html" class="year-link">2023</a>
+        <a href="2024.html" class="year-link">2024</a>
+        <a href="2025.html" class="year-link">2025</a>
+        <a href="2026.html" class="year-link">2026</a>
     </div>
 </div>
-
-<footer>
-    <p>© 2026 上海交通大学东方Project社团 | 联系方式：sjtouhou@example.com</p>
-    <p>欢迎加入QQ群：686922858（本校）| 471319153（游客）</p>
-</footer>
-
+<footer>© 2026 东方南堂界遇 | 上海交通大学东方Project社团</footer>
 </body>
 </html>
