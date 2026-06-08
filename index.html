@@ -76,57 +76,6 @@
             margin-bottom: 1.5rem;
         }
         
-        /* 活动列表 */
-        .activity-list {
-            list-style: none;
-        }
-        
-        .activity-list li {
-            padding: 0.8rem 0;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .activity-list li:last-child {
-            border-bottom: none;
-        }
-        
-        .activity-date {
-            color: #e67e22;
-            font-weight: bold;
-            margin-right: 1rem;
-        }
-        
-        /* 照片网格 */
-        .photo-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 1rem;
-        }
-        
-        .photo-card {
-            background: #f9f9f9;
-            border-radius: 8px;
-            overflow: hidden;
-            text-align: center;
-            padding: 1rem;
-        }
-        
-        .photo-card img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 5px;
-        }
-        
-        /* 页脚 */
-        footer {
-            background: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 1.5rem;
-            margin-top: 2rem;
-        }
-        
         /* 历史时间线 */
         .timeline {
             list-style: none;
@@ -138,6 +87,21 @@
             padding-left: 1.5rem;
             margin-left: 1rem;
         }
+        
+        /* 页脚 */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 1rem; }
+            nav a { margin-right: 1rem; font-size: 0.9rem; }
+            .hero h1 { font-size: 1.8rem; }
+        }
     </style>
 </head>
 <body>
@@ -147,8 +111,6 @@
     <a href="#home">首页</a>
     <a href="#about">社团介绍</a>
     <a href="#history">社团历史</a>
-    <a href="#activities">活动记录</a>
-    <a href="#photos">照片合集</a>
 </nav>
 
 <div class="container">
@@ -161,56 +123,24 @@
     <!-- 社团介绍模块 -->
     <div class="section" id="about">
         <h2>📖 社团介绍</h2>
-        <p>上海交通大学东方Project社团，简称"交大东方社"，成立于2018年。我们是一个热爱东方Project系列作品的同好交流平台，定期举办游戏交流、音乐鉴赏、创作分享等活动。</p>
+        <p>上海交通大学东方Project社团，是一个热爱东方Project系列作品的同好交流平台，定期举办游戏交流、音乐鉴赏、创作分享等活动。</p>
         <p>无论你是从红魔乡入坑的老朋友，还是刚刚通过永夜抄认识幻想乡的新伙伴，这里都欢迎你的到来！</p>
+        <p style="margin-top: 0.5rem;">🎮 欢迎交大同学加入Q群：<strong>686922858</strong>！非本校学生也欢迎加入例会游客群：<strong>471319153</strong>。</p>
     </div>
 
     <!-- 社团历史模块 -->
     <div class="section" id="history">
         <h2>📅 社团历史</h2>
         <ul class="timeline">
-            <li><strong>2018年9月</strong> - 社团正式成立，首批成员15人</li>
-            <li><strong>2019年5月</strong> - 举办第一届"交大东方祭"同人展</li>
-            <li><strong>2020年-2022年</strong> - 线上活动持续开展，创作多部同人作品</li>
-            <li><strong>2023年10月</strong> - 社团成员突破50人</li>
-            <li><strong>2024年8月</strong> - 参与上海ComiCup同人展，反响热烈</li>
-            <li><strong>2025年12月</strong> - 举办首次东方主题音乐会</li>
+            <li><strong>2016年9月</strong> - 上海交大东方群“Scarlet Joyful Touhou Univ.”创建，社群诞生</li>
+            <li><strong>2017年12月</strong> - “FZ西方文化交流群”创建，正式归属动漫协会</li>
+            <li><strong>2018年12月</strong> - 首次在FZ动漫协会圣诞活动中设立东方摊位</li>
+            <li><strong>2019年4月</strong> - 第一次东方STG接力，B站投稿成功</li>
+            <li><strong>2023年至今</strong> - 社团持续发展，成员不断壮大</li>
         </ul>
-    </div>
-
-    <!-- 活动记录模块 -->
-    <div class="section" id="activities">
-        <h2>🎉 近期活动</h2>
-        <ul class="activity-list">
-            <li><span class="activity-date">2026年3月15日</span> - 春季招新&迎新会 @ 东中院4-201</li>
-            <li><span class="activity-date">2026年4月12日</span> - 东方永夜抄联机活动 @ 线上</li>
-            <li><span class="activity-date">2026年5月1日</span> - 五一例大祭创作交流会 @ 包玉刚图书馆</li>
-        </ul>
-        <p style="margin-top: 1rem; color: #666;">更多活动请关注社团群公告~</p>
-    </div>
-
-    <!-- 照片合集模块 -->
-    <div class="section" id="photos">
-        <h2>📸 精彩瞬间</h2>
-        <div class="photo-grid">
-            <div class="photo-card">
-                <img src="https://picsum.photos/id/104/300/200" alt="活动照片1">
-                <p>2025 秋季招新合影</p>
-            </div>
-            <div class="photo-card">
-                <img src="https://picsum.photos/id/169/300/200" alt="活动照片2">
-                <p>东方同人创作展</p>
-            </div>
-            <div class="photo-card">
-                <img src="https://picsum.photos/id/155/300/200" alt="活动照片3">
-                <p>音乐会现场</p>
-            </div>
-            <div class="photo-card">
-                <img src="https://picsum.photos/id/96/300/200" alt="活动照片4">
-                <p>例大祭摊位</p>
-            </div>
-        </div>
-        <p style="margin-top: 1rem; text-align: center; color: #666;">* 图片为示例，实际照片请替换为社团真实照片</p>
+        <p style="margin-top: 1.5rem;">
+            <a href="history.html" style="color: #e67e22; text-decoration: none; font-weight: bold;">📖 查看完整活动史 →</a>
+        </p>
     </div>
 </div>
 
