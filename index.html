@@ -14,18 +14,23 @@
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f5f5f5;
+            /* 背景图设置 */
+            background-image: url('1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             color: #333;
             line-height: 1.6;
         }
         
-        /* 导航栏 */
+        /* 导航栏 - 添加半透明效果 */
         nav {
-            background-color: #2c3e50;
+            background-color: rgba(44, 62, 80, 0.9);
             padding: 1rem 2rem;
             position: sticky;
             top: 0;
             z-index: 100;
+            backdrop-filter: blur(5px);
         }
         
         nav a {
@@ -46,14 +51,15 @@
             padding: 2rem;
         }
         
-        /* 头部横幅 */
+        /* 头部横幅 - 半透明背景让背景图透出来 */
         .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: rgba(0, 0, 0, 0.6);
             color: white;
             text-align: center;
             padding: 4rem 2rem;
             border-radius: 10px;
             margin-bottom: 2rem;
+            backdrop-filter: blur(3px);
         }
         
         .hero h1 {
@@ -61,9 +67,9 @@
             margin-bottom: 1rem;
         }
         
-        /* 模块卡片 */
+        /* 模块卡片 - 半透明白色背景 */
         .section {
-            background: white;
+            background: rgba(255, 255, 255, 0.92);
             border-radius: 10px;
             padding: 2rem;
             margin-bottom: 2rem;
@@ -104,18 +110,7 @@
         
         .activity-desc {
             color: #555;
-            margin-bottom: 0.5rem;
-        }
-        
-        .read-more {
-            color: #e67e22;
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: bold;
-        }
-        
-        .read-more:hover {
-            text-decoration: underline;
+            margin-bottom: 0;
         }
         
         /* 年份分隔 */
@@ -133,9 +128,9 @@
             font-size: 0.8rem;
         }
         
-        /* 页脚 */
+        /* 页脚 - 半透明 */
         footer {
-            background: #2c3e50;
+            background: rgba(44, 62, 80, 0.9);
             color: white;
             text-align: center;
             padding: 1.5rem;
@@ -173,7 +168,7 @@
         <p style="margin-top: 0.5rem;">🎮 欢迎交大同学加入Q群：<strong>686922858</strong>！非本校学生也欢迎加入例会游客群：<strong>471319153</strong>。</p>
     </div>
 
-    <!-- 近期活动模块（基于飞书文档2025-2026年真实记录） -->
+    <!-- 近期活动模块 -->
     <div class="section" id="activities">
         <h2>🎉 近期活动</h2>
         
@@ -186,7 +181,6 @@
             <div class="activity-desc">
                 社团以“东方南堂界遇”名义在浮泽夏日纪设立摊位，展示东方文化，与同好交流。
             </div>
-            <a href="#" class="read-more">阅读全文 →</a>
         </div>
         
         <div class="activity-item">
@@ -195,7 +189,6 @@
             <div class="activity-desc">
                 社团成员组团参加同济大学东方主题例会，与各校东方社群交流互动。
             </div>
-            <a href="#" class="read-more">阅读全文 →</a>
         </div>
         
         <div class="activity-item">
@@ -204,7 +197,6 @@
             <div class="activity-desc">
                 以“东方南堂界遇”社团身份参加皖江THO（东方同人展会），展示社团作品。
             </div>
-            <a href="#" class="read-more">阅读全文 →</a>
         </div>
         
         <div class="activity-item">
@@ -213,7 +205,6 @@
             <div class="activity-desc">
                 以“东方南堂界遇”社团身份参加宁波THO，这是社团首次以正式名义参加外地THO。
             </div>
-            <a href="#" class="read-more">阅读全文 →</a>
         </div>
         
         <div class="activity-item">
@@ -222,7 +213,6 @@
             <div class="activity-desc">
                 社团春季户外活动，成员们前往顾村公园赏花、聚餐、交流。
             </div>
-            <a href="#" class="read-more">阅读全文 →</a>
         </div>
         
         <!-- ===== 2025年 ===== -->
@@ -234,7 +224,6 @@
             <div class="activity-desc">
                 社团史上规模最大的线下例会！约150人到场（场地容量上限），包含Bingo、歌牌、图寻、FTG对战、STG接力等丰富环节。活动全程直播并录制，B站有视频存档。现场还分发了社团周边（诹访子立牌、早苗钥匙扣、吧唧、纸袋等）。
             </div>
-            <a href="#" class="read-more">阅读全文 →</a>
         </div>
         
         <div class="activity-item">
@@ -243,7 +232,6 @@
             <div class="activity-desc">
                 社团在浮泽秋日纪设立摊位，内容精彩纷呈：播放东方曲、STG Bingo低难度挑战、Fumo祭坛、东方书籍碟片展示、同人游戏试玩、无料交换、桌游红黑合战。现场还有魔理沙coser和笛子演奏，吸引了大量观众。
             </div>
-            <a href="#" class="read-more">阅读全文 →</a>
         </div>
         
         <div class="activity-item">
@@ -252,7 +240,6 @@
             <div class="activity-desc">
                 社团成员前往华东理工大学参加东方主题例会，与华理东方社群交流。
             </div>
-            <a href="#" class="read-more">阅读全文 →</a>
         </div>
         
         <div class="activity-item">
@@ -261,7 +248,6 @@
             <div class="activity-desc">
                 社团成员前往上海财经大学参加东方主题例会，与上财东方社群交流。
             </div>
-            <a href="#" class="read-more">阅读全文 →</a>
         </div>
         
         <div class="activity-item">
@@ -270,7 +256,6 @@
             <div class="activity-desc">
                 社团成员参加复旦大学“东方光华语”第三届东方主题例会，到场超过十六人。“饮水思源，爱国荣校”的口号响彻合影现场。活动结束后分发社团吧唧、合照、聚餐。同日，“东方南堂界遇IV”例会游客群建立，一小时内引流100人。
             </div>
-            <a href="#" class="read-more">阅读全文 →</a>
         </div>
         
         <div class="activity-item">
@@ -279,7 +264,6 @@
             <div class="activity-desc">
                 与复旦大学东方社群合作，为联名明信片举办征图活动，共4位创作者参与。
             </div>
-            <a href="#" class="read-more">阅读全文 →</a>
         </div>
         
         <p style="margin-top: 1rem; text-align: right; color: #888; font-size: 0.85rem;">
