@@ -6,6 +6,10 @@
     <title>活动产出 - 东方南堂界遇</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        html, body {
+            height: 100%;
+        }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-image: url('bg.jpg');
@@ -13,6 +17,9 @@
             background-attachment: fixed;
             color: #333;
             line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         nav {
             background-color: rgba(44, 62, 80, 0.9);
@@ -32,6 +39,7 @@
             margin-top: 2rem;
             margin-bottom: 2rem;
             text-align: center;
+            flex: 1; 
         }
         .back-link {
             display: inline-block;
@@ -60,10 +68,10 @@
 <nav>
     <a href="index.html">首页</a>
     <a href="history.html">社团历史</a>
-    <a href="产出.html">社团产出</a>
+    <a href="project.html">社团产出</a>
 </nav>
 <div class="container">
-    <a href="产出.html" class="back-link">← 返回社团产出</a>
+    <a href="project.html" class="back-link">← 返回社团产出</a>
     <h1>🎪 活动产出</h1>
     <div class="placeholder">
         📝 内容正在整理中，敬请期待！<br>
